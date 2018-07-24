@@ -1,0 +1,477 @@
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+
+span {
+    font-size: 30px;
+    color: #967c4b;
+
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+p {
+    font-family: 'PT Serif Caption', serif;
+    /* color: #626262; */
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    /*     color: #967c4b; */
+}
+
+h5 {
+    font-size: 17px;
+
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+/* ========================== head ========================== */
+
+.head {
+    background-image: url(imeges/yoga2-home-slider-bg.png);
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    /*     opacity: 1;
+visibility: inherit;
+z-index: 20; */
+}
+
+.head_wrap {
+    align-content: center;
+    text-align: center;
+}
+/* ========================== navigation ========================== */
+
+.sidenav {
+    display: block;
+text-align: center;
+   /*  border: 1px solid; */
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+    text-align: right; 
+}
+span  {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.head_wrap img {
+    vertical-align: middle;
+}
+
+.yoga_girl img {
+    width: 35%;
+    height: 100%;
+    padding: 50px 0;
+    position: relative;
+}
+
+.yoga_girl img:before {
+    content: "29" width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    font-size: 150px;
+}
+
+
+
+
+/* ========================== explained ========================== */
+
+.content {
+
+    background-color: #f1f3f6;
+    /*         background-image: url(imeges/yoga2-activity-bottom-gradient2.png);
+background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom; */
+}
+
+
+
+.explained {
+    padding: 50px 0;
+}
+
+
+.title {}
+
+button {
+    display: inline-block;
+    background-color: #967c4b;
+    color: #fff;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: 0;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .03);
+}
+
+.yoga_poses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    text-align: center;
+    padding: 50px 0;
+    background-image: url(imeges/yoga2-home-poses-bg.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.poses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.colmn {
+    width: 250px;
+
+    margin: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.poses .colmn .img_border {
+    position: relative;
+    display: inline-block;
+}
+
+.poses .colmn:nth-child(n+3) .img_border {
+    margin-top: 100px;
+}
+
+.poses .colmn:hover .img_border:before {
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-name: bord;
+    animation-duration: 5s linear;
+}
+
+@keyframes bord {
+    0% {
+        border-bottom: 1px solid;
+        width: 0% top: 20px;
+        transform: translateY(20%);
+    }
+    100% {
+        border-bottom: 3px solid;
+        width: 100% top: 10px;
+        transform: translateY(100%);
+    }
+}
+
+
+/* ========================== our_studio ========================== */
+
+.our_studio_wrap {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.our_studio_colmn {
+
+    width: 850px;
+    background-image: url(imeges/yoga-2-home-collage.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+}
+
+.our_text {
+    width: 50%;
+   /*  word-break: break-all; */
+}
+
+
+
+
+/* ========================== video ========================== */
+
+.video {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.video_wrap {
+
+    /* margin: 100px 0; */
+    height: 25em;
+    ;
+    background-image: url(imeges/yoga2-home-play1.png), url(imeges/yoga2-home-videobg.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: center, center;
+
+
+    /* position: relative; */
+}
+
+.video_wrap a img {
+    /*  line-height:33em; */
+    /*     height:  100px;
+ line-height: 25rem; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateX(50) */
+    ;
+    transform: translateY(95%);
+}
+
+
+
+/* ========================== Training ========================== */
+
+.Training {
+    padding: 100px 0;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.block1,
+.block2 {}
+
+.block1_text {
+    width: 300px;
+}
+
+.block1_time {
+    width: auto;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.text_time_block1 {
+    padding: 10px;
+}
+
+.text_time_block2 {
+    transform: translateY(20%);
+}
+
+.block2 img {
+    width: 80%;
+    height: auto;
+}
+
+.img_top {
+    transform: translateY(-15%);
+}
+
+.img_bottom {
+    transform: translateY(10%);
+}
+
+
+/* ========================== foto ========================== */
+
+.foto {
+    /*  border: 2px solid blue; */
+}
+
+.foto_wrap {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-image: url(imeges/yoga2-home-bg-footer2.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.foto_block {
+    display: block;
+}
+
+.foto_block img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ========================== contact ========================== */
+
+.contact {
+    padding: 100px;
+    text-align: center;
+    background-color: #95825e;
+    color: #000;
+}
+
+.contact_wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact_text {
+    padding: 50px;
+    text-align: left;
+}
+
+.contact_btn {
+    background-color: #0c101b;
+    color: #ffe294;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    padding: 10px 100px;
+    margin: 50px 0 100px;
+}
+
+.contact_btn:hover {
+    background-color: #ffe294;
+    color: #0c101b;
+}
+
+
+/* ========================== footer ========================== */
+
+.copyright {
+    background-color: #95825e;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ========================== media ========================== */
+
+@media screen and (max-width: 768px) {
+    .text_time_block2 {
+        border: 1px dashed;
+        transform: translateY(0%);
+    }
+    .foto_wrap {
+        flex-wrap: wrap;
+    }
+    .poses .colmn:nth-child(n+3) .img_border {
+        margin-top: 0;
+    }
+    .contact {
+        padding: 0px;
+    }
+    .contact_text {
+        padding: 0px;
+        text-align: center;
+    }
+    .our_studio_colmn {
+        width: auto;
+    }
+
+    .our_text {
+        width: auto;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px; display: block;
+    }
+    span {
+        display: block;
+    }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: left;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+}
